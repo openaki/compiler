@@ -1,0 +1,23 @@
+
+
+============Basic Blocks===============
+
+----------Block 0----------
+Prologue
+
+----------Block 1----------
+[1]:	ldc	_s4 = 10
+[3]:	ldc	_s3 = 5
+[5]:	ldc	_s1 = 10
+[xx]:	cpy	[DISP + 0 ] = _s1
+[7]:	ldc	_s9 = 65
+[9]:	ldc	_s10 = 0.0
+[11]:	cpy	_s7 = [RAND]
+[12]:	ldc	_s2 = 111111
+[xx]:	cpy	[DISP + 4 ] = _s2
+[xx]:	cpy	_s5 = [DISP + 0 ]
+[xx]:	cpy	_s6 = [DISP + 4 ]
+[13]:	div	_s8 = _s5 , _s6
+
+----------Block 2----------
+Epilogue

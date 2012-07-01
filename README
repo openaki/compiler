@@ -1,0 +1,29 @@
+Akshat Gupta
+Compiler Project 2
+7849305349
+akshatgu@usc.edu
+
+This has been implemented in python (and has been tested on python-2.5)
+
+To execute the program please run the blocker.py along with the source file
+Eg.
+xyzzy$ python blocker.py eg1.c
+
+This command will take in eg1.c prase it and write the intermidiate code in inter_suif.txt
+After this blocks and other graphs are created and the output is written in inter.txt
+
+The Register Allocation details are written out in reg_alloc.txt
+For number of registers and adding constraints please edit the reg_parameters.py
+
+Notes and deviation from spec:
+	1.>  Since number of blocks are not fixed random number are used to find the number of iterations for a block if it belongs to a natural loop. The values can be found in reg_alloc.txt
+	2.>  The register constraint needs to be applied on to the variables used in C.
+	3.>  There are two maps for register constraints ... Please remember that the registers corresponding follow a "and" condition
+	4.>  If a variable is used that has not been declared it is assumed to be a constant and no error is generated.
+	5.>  Once the code has been spilled, it is never spilled again to make sure there is no infinite loop. To do this its spill cost is changed to -infinity.
+	6.>  The AdjMtx is not being written to file as it becomes messy.
+For parsing Lyx and Yacc bindings for python have been used. 
+
+Ouput: 	reg_alloc.txt
+ 
+
